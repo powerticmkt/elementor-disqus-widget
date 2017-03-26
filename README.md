@@ -3,7 +3,7 @@ Show Disqus comment system on your Elementor Pages
 
 # Install
 
-Just download the latest version and install on your wordpress website
+Just download the latest version here https://github.com/powerticmkt/elementor-disqus-widget/archive/master.zip and install on your wordpress website
 
 # Usage
 
