@@ -39,3 +39,15 @@ function elementor_disqus_load() {
 	require( __DIR__ . '/plugin.php' );
 }
 add_action( 'plugins_loaded', 'elementor_disqus_load' );
+
+
+
+/////////// PLUGIN UPDATE CHECKER ***********************
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/powerticmkt/elementor-disqus-widget/',
+    __FILE__,
+    'elementor-disqus-widget'
+);
+$myUpdateChecker->setBranch('master');
+/////////// **********************************************
