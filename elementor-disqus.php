@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Elementor Disqus Widget
- * Description: Elementor widget to show disqus.
+ * Description: Elementor widget to show disqus on your pages.
  * Plugin URI:  https://www.powertic.com.br/
- * Version:     0.0.1
+ * Version:     0.1.0
  * Author:      Powertic
  * Author URI:  https://www.powertic.com/br/
  * Text Domain: elementor-disqus
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  */
 function elementor_disqus_load() {
 	// Load localization file
-	load_plugin_textdomain( 'helementor-disqus' );
+	load_plugin_textdomain( 'elementor-disqus' );
 
 	// Notice if the Elementor is not active
 	if ( ! did_action( 'elementor/loaded' ) ) {
@@ -47,7 +47,7 @@ require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'https://github.com/powerticmkt/elementor-disqus-widget/',
     __FILE__,
-    'elementor-disqus-widget'
+    'elementor-disqus'
 );
 $myUpdateChecker->setBranch('master');
 /////////// **********************************************
