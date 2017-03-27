@@ -68,6 +68,14 @@ class Plugin {
 	 */
 	private function register_widget() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Elementor_Disqus() );
+		\Elementor\Plugin::instance()->elements_manager->add_category(
+			'powertic-elements',
+			[
+				'title' => 'Powertic',
+				'icon' => 'fa fa-plug'
+			],
+			1
+		);
 	}
 }
 

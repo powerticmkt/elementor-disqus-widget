@@ -28,7 +28,7 @@ class Elementor_Disqus extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'general-elements' ];
+		return [ 'powertic-elements' ];
 	}
 
 	/**
@@ -41,26 +41,7 @@ class Elementor_Disqus extends Widget_Base {
 		}
 	*/
 
-	protected function _register_controls() {
-		$this->start_controls_section(
-			'section_content',
-			[
-				'label' => __( 'Content', 'hello-world' ),
-			]
-		);
 
-		$this->end_controls_section();
-
-		$this->start_controls_section(
-			'section_style',
-			[
-				'label' => __( 'Style', 'hello-world' ),
-				'tab' => Controls_Manager::TAB_STYLE,
-			]
-		);
-
-		$this->end_controls_section();
-	}
 
 	protected function render() {
 		global $post;

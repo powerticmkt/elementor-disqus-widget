@@ -33,13 +33,26 @@ function elementor_disqus_load() {
 	if ( ! version_compare( ELEMENTOR_VERSION, $elementor_version_required, '>=' ) ) {
 		add_action( 'admin_notices', 'elementor_disqus_fail_load_out_of_date' );
 		return;
-	}
+	}	
 
 	// Require the main plugin file
 	require( __DIR__ . '/plugin.php' );
 }
 add_action( 'plugins_loaded', 'elementor_disqus_load' );
 
+
+add_action( 'elementor/init',[ $this, 'elementor_loaded']);
+
+function elementor_loaded(){
+\Elementor\Plugin::instance()->elements_manager->add_category(
+'powertic-elements',
+[
+'title' => 'Powertic',
+'icon' => 'fa fa-plug'
+],
+1
+);
+}
 
 
 /////////// PLUGIN UPDATE CHECKER ***********************
