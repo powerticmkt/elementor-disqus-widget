@@ -3,7 +3,7 @@
  * Plugin Name: Elementor Disqus Widget
  * Description: Elementor widget to show disqus on your pages.
  * Plugin URI:  https://www.powertic.com.br/
- * Version:     0.2.0
+ * Version:     0.2.1
  * Author:      Powertic
  * Author URI:  https://www.powertic.com/br/
  * Text Domain: elementor-disqus
