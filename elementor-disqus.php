@@ -41,20 +41,6 @@ function elementor_disqus_load() {
 add_action( 'plugins_loaded', 'elementor_disqus_load' );
 
 
-add_action( 'elementor/init',[ $this, 'elementor_loaded']);
-
-function elementor_loaded(){
-\Elementor\Plugin::instance()->elements_manager->add_category(
-'powertic-elements',
-[
-'title' => 'Powertic',
-'icon' => 'fa fa-plug'
-],
-1
-);
-}
-
-
 /////////// PLUGIN UPDATE CHECKER ***********************
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
